@@ -1,0 +1,11 @@
+name: Manual Echo Test
+
+on:
+  workflow_dispatch:   # Allows manual triggering
+
+jobs:
+  echo_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello from GitHub Actions!"
