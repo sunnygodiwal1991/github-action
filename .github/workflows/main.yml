@@ -21,6 +21,9 @@ jobs:
     - name: Print the ref type
       run: echo "my type, ${{ github.ref_type }}"
 
+    - name: Print the the last commit id
+      run: echo "my type, ${{ github.sha }}"
+
   # build:
   #   name: Build & Test Java Project
   #   runs-on: ubuntu-latest
