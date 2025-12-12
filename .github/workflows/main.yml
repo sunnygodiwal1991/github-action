@@ -15,7 +15,8 @@ env:
 jobs:
   context:
     name: Context of Github Action
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: label-test
 
     steps:
     - name: Print the branch name
