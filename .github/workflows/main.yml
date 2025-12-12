@@ -48,6 +48,9 @@ jobs:
     - name: Print workspace
       run: echo "workspace, ${{ github.workspace }}"
 
+    - name: Print custom variable
+      run: echo "Print custom variable, ${{ vars.MY_NAME }}"
+
 
 
 
