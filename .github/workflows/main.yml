@@ -32,8 +32,9 @@ jobs:
 
     - name: Print run id
       run: echo "my run id, ${{ github.run_number }}"
-      
-      run: echo "run id, ${{ github.actor }}"
+
+    - name: Print who trigger the job
+      run: echo "who trigger the job, ${{ github.actor }}"
 
 
 
