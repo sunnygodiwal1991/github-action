@@ -57,7 +57,11 @@ jobs:
     - name: Print inside variable
       run: echo "Print inside variable, ${{ env.INSIDE_CUSTOM_VARIABLE_NAME }}"
 
+    - name: Print steps local var
+      run: echo "MY_VAR=hello" >> $GITHUB_ENV
 
+    - name: Print
+      run: echo "Value is $MY_VAR"
 
 
 
