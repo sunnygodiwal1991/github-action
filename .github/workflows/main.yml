@@ -42,3 +42,12 @@ jobs:
           name: java-app-jar
           path: target/*.jar
           
+
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout code
+      - name: Checkout source code
+        uses: actions/checkout@v4
