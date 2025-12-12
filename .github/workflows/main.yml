@@ -1,4 +1,4 @@
-name: Java Maven CI
+name: CI CD Pipeline For Banking Job
 
 on:
   push:
