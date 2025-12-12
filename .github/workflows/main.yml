@@ -23,6 +23,11 @@ jobs:
 
     - name: Print the the last commit id
       run: echo "my type, ${{ github.sha }}"
+      
+    - name: Print repo name
+      run: echo "my repo, ${{ github.repository }}"
+
+
 
   # build:
   #   name: Build & Test Java Project
