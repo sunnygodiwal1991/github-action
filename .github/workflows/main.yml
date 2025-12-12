@@ -18,6 +18,9 @@ jobs:
     - name: Print the branch name
       run: echo "my branch name is ${{ github.ref_name }}"
 
+    - name: Print the ref type
+      run: echo "my type, ${{ github.ref_type }}"
+
   # build:
   #   name: Build & Test Java Project
   #   runs-on: ubuntu-latest
