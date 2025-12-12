@@ -30,6 +30,9 @@ jobs:
     - name: Print runner id
       run: echo "my runner id, ${{ github.run_id }}"
 
+    - name: Print run id
+      run: echo "my run id, ${{ github.run_number }}"
+
 
 
   # build:
