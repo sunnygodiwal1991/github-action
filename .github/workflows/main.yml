@@ -9,6 +9,9 @@ on:
       - master
   workflow_dispatch:
 
+env:
+  INSIDE_CUSTOM_VARIABLE_NAME: "inside"  
+
 jobs:
   context:
     name: Context of Github Action
@@ -50,6 +53,9 @@ jobs:
 
     - name: Print custom variable
       run: echo "Print custom variable, ${{ vars.MY_NAME }}"
+
+    - name: Print inside variable
+      run: echo "Print inside variable, ${{ env.INSIDE_CUSTOM_VARIABLE_NAME }}"
 
 
 
