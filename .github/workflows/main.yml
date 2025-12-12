@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Print the branch name
-      run: echo "${{ github.ref_name }}"      
+      run: echo '${{ github.ref_name }}'
 
   # build:
   #   name: Build & Test Java Project
