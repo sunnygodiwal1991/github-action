@@ -46,6 +46,7 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
+    need: build
 
     steps:
       # Checkout code
