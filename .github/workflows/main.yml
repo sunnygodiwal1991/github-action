@@ -10,14 +10,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  context:
     name: Build & Test Java Project
     runs-on: ubuntu-latest
 
     steps:
+    - name: Print GitHub Context
+      run: echo '${{ toJson(github) }}'   
+
+  build:
+    name: Build & Test Java Project
+    runs-on: ubuntu-latest
+    needs: context
+
+    steps:
       # Checkout code
       - name: Checkout source code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4     
 
       # Setup Java 17 (recommended)
       - name: Set up JDK 17
