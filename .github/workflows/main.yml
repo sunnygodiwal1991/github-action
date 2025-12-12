@@ -36,6 +36,18 @@ jobs:
     - name: Print who trigger the job
       run: echo "who trigger the job, ${{ github.actor }}"
 
+    - name: Print event name
+      run: echo "event name, ${{ github.event_name }}"
+
+    - name: Print job name
+      run: echo "job name, ${{ github.job }}"
+
+    - name: Print who trigger mannually
+      run: echo "who trigger mannually, ${{ github.triggering_actor }}"
+
+    - name: Print workspace
+      run: echo "workspace, ${{ github.workspace }}"
+
 
 
 
