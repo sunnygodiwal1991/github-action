@@ -27,6 +27,9 @@ jobs:
     - name: Print repo name
       run: echo "my repo, ${{ github.repository }}"
 
+    - name: Print runner id
+      run: echo "my runner id, ${{ github.run_id }}"
+
 
 
   # build:
