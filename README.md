@@ -4,6 +4,6 @@ github-action
 
 
 ```bash
-$ ls -la
-$ echo "hello world"
+$ls -la
+$echo "hello world"
 ```
